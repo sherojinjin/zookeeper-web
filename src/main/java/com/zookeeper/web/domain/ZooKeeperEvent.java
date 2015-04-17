@@ -4,13 +4,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher.Event.EventType;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.springframework.util.Assert;
 
-@Entity(name="zooKeeper_event")
+@Entity
+@Table(name="zooKeeper_event")
 public class ZooKeeperEvent {
 
 	@Id

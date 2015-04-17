@@ -1,4 +1,4 @@
-package com.zookeeper.web;
+package com.zookeeper.web.controller;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 

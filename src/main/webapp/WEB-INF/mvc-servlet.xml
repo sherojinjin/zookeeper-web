@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util" xmlns:context="http://www.springframework.org/schema/context"
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:util="http://www.springframework.org/schema/util" 
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
 	http://www.springframework.org/schema/mvc
@@ -11,9 +15,7 @@
 
 	<mvc:annotation-driven />
 	
-	<context:component-scan base-package="com.zookeeper.web"/>
-	
-	<context:property-placeholder location="classpath:config.properties"/>
+	<context:component-scan base-package="com.zookeeper.web.controller"/>
 	
 	<mvc:resources location="/WEB-INF/views/js/**" mapping="/js/**"/>
 	<mvc:resources location="/WEB-INF/views/css/**" mapping="/css/**"/>
